@@ -1,7 +1,7 @@
 import React, { useCallback, useEffect, useState } from "react";
-import { SafeAreaView, Text } from "react-native";
+import { View } from "react-native";
 import * as SplashScreen from "expo-splash-screen";
-import { StatusBar } from "expo-status-bar";
+import NavigationCore from "./src/navigation/NavigationCore";
 
 // Keep the splash screen visible while we fetch resources
 void SplashScreen.preventAutoHideAsync();
@@ -32,13 +32,13 @@ export default function App(): JSX.Element | null {
   }
 
   return (
-    <SafeAreaView
+    <View
+      style={{ flex: 1 }}
       onLayout={() => {
         void onLayoutRootView();
       }}
     >
-      <Text>Open up App.tsx to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </SafeAreaView>
+      <NavigationCore />
+    </View>
   );
 }
