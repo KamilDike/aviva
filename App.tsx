@@ -1,5 +1,5 @@
 import React, { useCallback, useEffect, useState } from "react";
-import { View } from "react-native";
+import { SafeAreaView } from "react-native";
 import * as SplashScreen from "expo-splash-screen";
 import NavigationCore from "./src/navigation/NavigationCore";
 
@@ -32,13 +32,13 @@ export default function App(): JSX.Element | null {
   }
 
   return (
-    <View
+    <SafeAreaView
       style={{ flex: 1 }}
       onLayout={() => {
         void onLayoutRootView();
       }}
     >
       <NavigationCore />
-    </View>
+    </SafeAreaView>
   );
 }
