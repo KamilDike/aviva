@@ -21,13 +21,16 @@ const HomeScreen = (): JSX.Element => {
         onSubmitEditing={submit}
         value={cityName}
         onChangeText={setCityName}
-        placeholder="test"
+        placeholder="city name"
         style={HomeScreenStyles.textInput}
+        accessibilityLabel="city name input"
       />
       <Image
         source={require("../../../assets/splash.png")}
         style={HomeScreenStyles.image}
         resizeMode="contain"
+        alt="aviva image"
+        accessibilityLabel="aviva image"
       />
     </Screen>
   );
