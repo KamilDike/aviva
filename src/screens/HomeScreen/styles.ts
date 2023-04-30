@@ -1,6 +1,6 @@
 import { StyleSheet } from "react-native";
-import { Colors } from "../../styles/Colors";
-import { Values } from "../../styles/Values";
+import { Colors } from "../../consts/Colors";
+import { Values } from "../../consts/Values";
 
 export const HomeScreenStyles = StyleSheet.create({
   textInput: {

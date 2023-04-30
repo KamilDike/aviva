@@ -12,7 +12,7 @@ interface Props {
 const ToggleButton = ({ name, callback, isActive }: Props): JSX.Element => {
   return (
     <TouchableOpacity
-      accessibilityLabel="toggle button"
+      accessibilityLabel="toggle-button"
       onPress={callback}
       style={[
         ToggleButtonStyles.container,

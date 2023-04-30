@@ -1,12 +1,12 @@
 import React from "react";
 import { render, fireEvent } from "@testing-library/react-native";
-import ToggleButton from "../src/components/ToggleButton";
-import { ToggleButtonStyles } from "../src/components/ToggleButton/styles";
+import ToggleButton from "../../src/components/ToggleButton";
+import { ToggleButtonStyles } from "../../src/components/ToggleButton/styles";
 
 describe("ToggleButton", () => {
   const mockCallback = jest.fn();
   const defaultProps = {
-    name: "toggle button",
+    name: "toggle-button",
     callback: mockCallback,
     isActive: false,
   };

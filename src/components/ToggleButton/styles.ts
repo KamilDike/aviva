@@ -7,10 +7,11 @@ export const ToggleButtonStyles = StyleSheet.create({
     width: "100%",
     padding: Values.L,
     borderRadius: Values.L,
-    marginTop: Values.M,
+    // marginTop: Values.M,
     justifyContent: "center",
     alignItems: "center",
     opacity: 1,
+    marginTop: "auto",
   },
   active: {
     backgroundColor: Colors.active,
